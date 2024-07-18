@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'aside article article'
+        'footer footer footer';
+    grid-gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    grid-area: header;
+    background-color: #00c4cc;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #8fd19e;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.article {
+    grid-area: article;
+    background-color: #f7b267;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.image {
+    background-color: #f0e68c;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #00c4cc;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}</style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="./style.css">
+    <body>
+        
+    
+        <div class="container">
+            <header class="header">Header</header>
+            <aside class="aside">Aside</aside>
+            <main class="main">
+                <article class="article">Article
+                    <div class="images">
+                        <div class="image">Image</div>
+                        <div class="image">Image</div>
+                        <div class="image">Image</div>
+                    </div>
+                </article>
+            </main>
+            <footer class="footer">Footer</footer>
+        </div>
+        
+    </body>
+    </html>
